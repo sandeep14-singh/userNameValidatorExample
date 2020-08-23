@@ -12,7 +12,8 @@ public class UsernameValidator {
 		boolean isValidUser = true;
 		for(Validator validator : validators){
 			if(!validator.performValidation(userName)){
-				isValidUser = false;
+				isValidUser = false;	
+				break;
 			}
 		}
 		return isValidUser;		
